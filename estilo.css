@@ -1,0 +1,214 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+    background-color: rgb(40, 40, 40);
+}
+nav{
+	width: 100%;
+	height: 20vh;
+	background-color: #688d13;
+   
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+#menu{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+button{
+    background-color: rgb(209,124,179);
+    color: #fff;
+    width: 7vw;
+    height: 3vh;
+    border: solid 0.3vh;
+    border-radius: 1.5vh;
+}
+#logo img{
+    width: 26vh;
+    margin-left: 20px;
+}
+
+#pesquisar{
+    background-color: rgb(209,124,179);
+    color: #fff;
+    width: 13vw;
+    height: 3vh;
+    border: solid 0.3vh;
+    border-radius: 1.5vh;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+#pesquisar::placeholder{
+    color: #fff;
+    margin-left: 10px;
+}
+form img{
+    width: 2vw;
+    height:3.8vh;
+    margin-bottom: -13.5px;
+}
+#meio{
+	width: 100vw;
+	margin-bottom: 5vh;
+    margin-top: 15px;
+    color: #fff;
+    
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.slider{/*Div pai dos slides/imagens*/
+    margin: 0 auto;
+    width: 84vw;
+    height: 50vh;
+    overflow: hidden; /*O valor hidden é utilizado quando queremos esconder a parte de um elemento para que ele não passe do tamanho determinado. Geralmente é utilizado junto das propriedades width e height.*/
+}
+.slides{
+    width: 1000%;/*Trocar tamanho das imagens*/
+    height: 50vh;
+
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 10%;
+    position: relative;/*O position relative, que em português significa relativo, é usado quando queremos alterar a posição de um elemento tendo como referência a posição inicial dele*/
+    transition: 3.2s;/*Transição de imagens*/
+}
+.slide img{
+    width: 84vw;/*Trocar tamanho das imagens*/
+}
+.manual-navigation{
+    position: absolute;/*O valor da propriedade CSS position absolute indica que o elemento ficará em uma posição fixa em relação à página.*/
+    width: 84vw;
+    margin-top: -40px;
+
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 0.5vh;
+    border-radius: 1vh;
+    cursor: pointer;/*para ter um link onde o usuario possa clickar*/
+    transition: 1s;/*para ter uma animação nas bolinhas*/
+}
+.manual-btn:not(:last-child){/*usando esse comando, a margin nao sera aplicado no ultimo item*/
+    margin-right: 4vh;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -10%;
+}
+#radio3:checked ~ .first{
+    margin-left: -20%;
+}
+.navigatio-auto div{
+    border: 2px solid #20a6ff;
+    padding: 0.5vh;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigatio-auto{
+    position: absolute;
+    width: 84vw;
+    margin-top: 360px;
+    
+    display: flex;
+    justify-content: center;
+}
+.navigatio-auto div:not(:last-child){
+    margin-right: 4vh;
+}
+#radio1:checked ~.navigatio-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~.navigatio-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~.navigatio-auto .auto-btn3{
+    background-color: #fff;
+}
+#conteudo{
+    width: 90vw;;
+}
+#conteudo span{
+    font-size: 20px;
+}
+.poster{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.poster img{
+    width: 20vw;
+}
+iframe{
+    margin-bottom: 15px;
+}
+footer{
+	width: 100%;
+	height: 18vh;
+	background-color: #688d13;
+    padding: 10px;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+footer h1, h2{
+    color: #fff;
+}
+
+.videos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.trilhasonora{
+    background-color: rgb(209,124,179);
+    color: #fff;
+    width: 17vw;
+    height: 10vh;
+    border: solid 2px;
+}
+.snopise{
+    padding: 10px;
+    width: 80%;
+}
+.snopise span{
+    font-size: 20px;
+}
+#ator1 img{
+    width: 17vw;
+}
+#ator2 img{
+    width: 17vw;
+}
+#ator3 img{
+    width: 24vw;
+}
+#ator4 img{
+    width: 17vw;
+}
+#ator5 img{
+    width: 24vw;
+}
+#ator6 img{
+    width: 24vw;
+}
+
